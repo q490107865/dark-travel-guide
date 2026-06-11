@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>越南攻略合集</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font: 15px/1.7 "PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+.page_wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+.page_header {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: #fff;
+    padding: 36px 24px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+.page_header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.page_header p {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 6px;
+}
+.toc {
+    background: #fafbfc;
+    border-bottom: 2px solid #eef0f2;
+    padding: 24px;
+}
+.toc h2 {
+    font-size: 18px;
+    color: #c0392b;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ddd;
+}
+.toc ol {
+    padding-left: 20px;
+}
+.toc li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+.toc a {
+    color: #168acd;
+    text-decoration: none;
+    font-weight: 500;
+}
+.toc a:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+.section {
+    padding: 28px 24px;
+    border-bottom: 1px solid #eef0f2;
+}
+.section:last-child {
+    border-bottom: none;
+}
+.section h2 {
+    font-size: 20px;
+    color: #c0392b;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+}
+.section h3 {
+    font-size: 17px;
+    color: #2c3e50;
+    margin: 20px 0 10px;
+    padding-left: 10px;
+    border-left: 3px solid #e74c3c;
+}
+.section p, .section div.text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    margin: 10px 0;
+}
+.section a {
+    color: #168acd;
+    text-decoration: none;
+    word-break: break-all;
+}
+.section a:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+.img-block {
+    text-align: center;
+    margin: 16px 0;
+}
+.img-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 14px 0;
+}
+.info-item {
+    background: #f8f9fa;
+    border-left: 3px solid #168acd;
+    padding: 10px 12px;
+    border-radius: 0 4px 4px 0;
+}
+.info-item .label {
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 13px;
+}
+.info-item .value {
+    color: #333;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.price-table th, .price-table td {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+.price-table th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+}
+.price-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+.note-box {
+    background: #fef9e7;
+    border: 1px solid #f9e79f;
+    border-left: 4px solid #f39c12;
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+}
+.note-box.danger {
+    background: #fdedec;
+    border-color: #f5b7b1;
+    border-left-color: #e74c3c;
+}
+.note-box.success {
+    background: #eaf2f8;
+    border-color: #aed6f1;
+    border-left-color: #2980b9;
+}
+.guide-steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 14px 0;
+}
+.guide-steps li {
+    counter-increment: step;
+    padding: 10px 12px 10px 44px;
+    position: relative;
+    margin: 8px 0;
+    background: #f8f9fa;
+    border-radius: 6px;
+    line-height: 1.7;
+}
+.guide-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.cluster-list {
+    margin: 14px 0;
+}
+.cluster-card {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0;
+}
+.cluster-card h4 {
+    color: #c0392b;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.cluster-card p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+.cluster-card .coord {
+    font-family: "Courier New",monospace;
+    background: #eef2f7;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+.tags {
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px dashed #ddd;
+}
+.tag {
+    display: inline-block;
+    background: #eef2f7;
+    color: #555;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 2px 4px 2px 0;
+}
+footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #999;
+    background: #fafbfc;
+    border-top: 1px solid #eef0f2;
+}
+@media (max-width: 480px) {
+    .info-grid { grid-template-columns: 1fr; }
+    .page_wrap { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<div class="page_wrap">
+
+<!-- Header -->
+<div class="page_header">
+<h1>🇻🇳 越南攻略合集</h1>
+<p>整理自 Telegram 频道 | 信息来自网络，请注意时效</p>
+</div>
+
+<!-- Table of Contents -->
+<div class="toc">
+<h2>📋 目录</h2>
+<ol>
+<li><a href="#s1">Spa Linh Cherry（胡志明）</a></li>
+<li><a href="#s2">胡志明口爆街</a></li>
+<li><a href="#s3">胡志明范五老街 GoGoBar</a></li>
+<li><a href="#s4">胡志明龙宫模式（中山区）</a></li>
+<li><a href="#s5">龙宫：Dang Vuong Cac Experience</a></li>
+<li><a href="#s6">越南 G 网（酒店女孩）教程</a></li>
+<li><a href="#s7">胡志明酒店女孩聚集区</a></li>
+<li><a href="#s8">头顿市酒店女孩聚集区</a></li>
+<li><a href="#s9">河内农业大学口爆街</a></li>
+<li><a href="#s10">河内林业大学花街</a></li>
+</ol>
+</div>
+
+<!-- Section 1: Cherry -->
+<div class="section" id="s1">
+<h2>一、Spa Linh Cherry（胡志明）</h2>
+<div class="img-block">
+<img src="photos/photo_13@08-06-2026_18-23-35.jpg" alt="Spa Linh Cherry"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">10.7791, 106.7048</div>
+</div>
+<div class="info-item">
+<div class="label">营业时间</div>
+<div class="value">上午 10 点 ~ 凌晨 2 点</div>
+</div>
+<div class="info-item">
+<div class="label">按摩费用</div>
+<div class="value">50 万越南盾（直接给前台）</div>
+</div>
+<div class="info-item">
+<div class="label">做爱费用</div>
+<div class="value">全套 200 万 / 半套 130 万</div>
+</div>
+</div>
+<p>这是一家主打奥黛海选的按摩店，只要稍微了解越南的人都知道，如雷贯耳。</p>
+<p>进门后先交按摩费用（基本 50 万），按摩 50 分钟。交完钱后进入里面沙发位置坐好，会有一大群穿着奥黛的越南美女围着你，能围四层，前排的坐在地上，中间的蹲着，后面的两层站着，大概能有六七十个给你选。你选定好女孩子后就可以上楼或去马路对面的酒店等了。</p>
+<p>进入房间后跟女孩子沟通做爱项目，前面交的 50 万只是按摩，做爱一般是 <strong>200 万一次</strong>，也可以做半套 <strong>130 万</strong>。</p>
+<div class="note-box danger">
+<strong>注意事项：</strong><br/>
+1️⃣ 这是一家规模非常大的店，非常有名，完全不缺客人，所以服务态度就下降了。<br/>
+2️⃣ 女孩子非常多，有的女孩子不喜欢大陆人，服务时可能会很机车。<br/>
+3️⃣ 不能体验奥黛风情：客流量大时，你去的房间不是他们店铺上面的房间，而是马路对面的酒店。女孩子需要先去更衣室换掉奥黛，穿常服再找你。<br/>
+4️⃣ <strong>选对你微笑的女孩，可以降低机车的概率。</strong>
+</div>
+</div>
+
+<!-- Section 2: 口爆街 -->
+<div class="section" id="s2">
+<h2>二、胡志明口爆街</h2>
+<div class="img-block">
+<img src="photos/photo_16@08-06-2026_18-23-42.jpg" alt="口爆街位置"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">10.7917, 106.6932</div>
+</div>
+<div class="info-item">
+<div class="label">花费</div>
+<div class="value">40 万越南盾</div>
+</div>
+</div>
+<p>胡志明的口爆街，距离<strong>粉色教堂</strong>不远，地图上画圈的那个教堂就是粉色教堂。上面划红色线的位置就是口爆街了。</p>
+<p>这条街上有<strong>七家口爆店</strong>，你走在这条街上，店门口一般会坐一个男的招揽生意，看到你会主动向你打招呼，价格都是一样的：<strong>四十万越南盾口爆一次</strong>，无套射在嘴里。</p>
+<p>环境不怎么好，一米八宽度的一个小隔间，可能还没有空调，注意卫生。不要脱了内裤趴在他们的床上，尽量避免龟头接触他们的床上用品。</p>
+<p><strong>过程：</strong>进店后选择姑娘，然后姑娘带你去房间，脱了裤子用湿巾擦一下，然后口交。</p>
+<p>至于能不能开大操逼，可以跟姑娘谈，姑娘如果愿意就谈价格，有的姑娘可以开大，一次<strong>七十万</strong>。有的会直接拒绝。</p>
+</div>
+
+<!-- Section 3: GoGoBar -->
+<div class="section" id="s3">
+<h2 id="s3">三、胡志明范五老街 GoGoBar</h2>
+<div class="img-block">
+<img src="photos/photo_24@08-06-2026_18-23-43.jpg" alt="范五老街"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">10.7662, 106.6913</div>
+</div>
+<div class="info-item">
+<div class="label">短钟 / 长钟</div>
+<div class="value">300 万 / 500-600 万</div>
+</div>
+</div>
+<p>范五老街画绿色线条的这条街，在大的丁字路口有<strong>两家 GoGoBar</strong>，门牌号是 <strong>159</strong> 和 <strong>143</strong>（地图上星星标记的位置）。</p>
+<p>嫖娼的玩法是曼谷的那种：进去后点饮料或酒，请姑娘喝一杯，姑娘陪你坐一会聊聊天。然后谈价格，服务分为<strong>短钟</strong>和<strong>长钟</strong>：短钟可以直接带去附近的钟点房；长钟要等到后半夜姑娘才会同意。</p>
+<div class="note-box">
+<strong>个人感受：</strong>当时去逛的时候没看到漂亮的姑娘，这个价格不如去 Cherry。范五老街是可以拍视频的，YouTube 上有很多范五老街的视频。<br/>
+我一直犹豫要不要发 GoGoBar——我理解的嫖娼就像逛超市一样，明码标价，不要有那么多弯弯道道。去 GoGoBar 还要请姑娘喝酒、聊天，曼谷的 GoGoBar 那些小姐还看人下菜，长得帅的、会聊天的给的服务就多，只会付钱的老实人就没什么服务。<br/>
+<strong>提示：</strong>姑娘报价格你可以砍价，要问清楚服务内容。
+</div>
+</div>
+
+<!-- Section 4: 龙宫 -->
+<div class="section" id="s4">
+<h2>四、胡志明龙宫模式（中山区 8 郡）</h2>
+<div class="img-block">
+<img src="photos/photo_25@08-06-2026_18-23-51.jpg" alt="龙宫位置"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">中心坐标</div>
+<div class="value">10.7364, 106.6906</div>
+</div>
+<div class="info-item">
+<div class="label">门票</div>
+<div class="value">250 万越南盾</div>
+</div>
+<div class="info-item">
+<div class="label">姑娘费用</div>
+<div class="value">500 万一炮，第二发半价</div>
+</div>
+<div class="info-item">
+<div class="label">时长</div>
+<div class="value">2 小时</div>
+</div>
+</div>
+<p>胡志明的龙宫模式主要集中在 8 郡中山区这片区域。已知的三家龙宫店（应该还有其他的）：</p>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">Bồng Lai Các Massage</div>
+<div class="value">10.73665, 106.6893</div>
+</div>
+<div class="info-item">
+<div class="label">Massage Pool Party Long Cung Trung Sơn</div>
+<div class="value">10.7374, 106.6911</div>
+</div>
+<div class="info-item">
+<div class="label">ĐẰNG VƯƠNG CÁC（Massage Trung Sơn）</div>
+<div class="value">10.7370, 106.6926</div>
+</div>
+</div>
+<p><strong>过程：</strong>单人或多人到店，海选姑娘，付门票 250 万越南盾，然后跟姑娘进入套房，开始计时 2 小时。套房里面有桑拿房、泳池、KTV 房、炮房、Nuru 水床。</p>
+<p><strong>多人交换收费：</strong>张三选了小芳，王五选了小花。张三草了小芳一次又草了小花一次 → 张三需支付 500 万给小芳、500 万给小花。王五同理。以此类推。门票和姑娘费用不同的店有一点差别，但模式都是这样的。</p>
+<div class="note-box danger">
+<strong>注意事项：</strong><br/>
+1️⃣ 这个模式主要的宣传点就是<strong>多人</strong>，不适合单人前往，最好约上几个好友一起去。人越多越好。<br/>
+2️⃣ 到店如果时间晚了没有漂亮的姑娘，可以在休息区休息一下——因为他们一般是 2 小时一场。比如你 2:30 到的店里，2 点已经开了一场了，剩下的姑娘都是没被选走的。你可以在大厅等到 4 点，再选。<br/>
+3️⃣ 跟朋友准备交换的话，选姑娘时要选你们都满意的。<br/>
+4️⃣ 默认是在炮房里面一对男女单独做爱的。如果想要淫乱场面需要跟姑娘沟通并加钱。<br/>
+5️⃣ 这是嫖娼模式，<strong>要带套，换姑娘要换套。</strong>
+</div>
+<p><em>总结：好贵啊。</em></p>
+</div>
+
+<!-- Section 5: Dang Vuong Cac -->
+<div class="section" id="s5">
+<h2>五、龙宫：Dang Vuong Cac Experience（2025 年 4 月 16 号更新）</h2>
+<div class="img-block">
+<img src="photos/photo_31@08-06-2026_18-23-55.jpg" alt="Dang Vuong Cac"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">10.7371, 106.6926</div>
+</div>
+<div class="info-item">
+<div class="label">营业时间</div>
+<div class="value">上午 9 点 ~ 次日凌晨 5 点</div>
+</div>
+<div class="info-item">
+<div class="label">网址</div>
+<div class="value"><a href="https://dangvuongcac.com" target="_blank">dangvuongcac.com</a></div>
+</div>
+</div>
+<p>按摩女郎阵容：拥有超过 400 名美丽的越南按摩女郎，当面海选。26 间单人泳池房。</p>
+<p>
+<strong>联系方式：</strong><br/>
+电报：
+<a href="https://t.me/dvc_massage" target="_blank">t.me/dvc_massage</a><br/>
+电报群：
+<a href="https://t.me/dangvuongcacTrungSon" target="_blank">t.me/dangvuongcacTrungSon</a><br/>
+WhatsApp：
+<a href="https://wa.me/84789738938" target="_blank">wa.me/+84789738938</a><br/>
+Zalo：
+<a href="https://zalo.me/0789738938" target="_blank">zalo.me/0789738938</a><br/>
+微信：
+<code>massage_vn</code>
+</p>
+</div>
+
+<!-- Section 6: G网 -->
+<div class="section" id="s6">
+<h2>六、越南 G 网（酒店女孩）教程</h2>
+<div class="img-block">
+<img src="photos/photo_37@08-06-2026_18-24-02.jpg" alt="G网截图"/>
+</div>
+<h3>主要网站</h3>
+<table class="price-table">
+<tr><th>网站</th><th>地址</th><th>说明</th></tr>
+<tr><td>G1</td><td><a href="https://www.gai15.net/gai-goi/" target="_blank">gai15.net</a></td><td>在越南境内才能打开，最常用</td></tr>
+<tr><td>G2</td><td><a href="https://gaigu15.net/gai-goi" target="_blank">gaigu15.net</a></td><td>支持筛选年龄/身高/价格/体重</td></tr>
+<tr><td>G3</td><td><a href="https://gaigoi.xxx/" target="_blank">gaigoi.xxx</a></td><td>按评价次数排序</td></tr>
+<tr><td>G4</td><td><a href="https://www.gai2k.net/" target="_blank">gai2k.net</a></td><td>失效</td></tr>
+<tr><td>K</td><td><a href="https://kynuviet.site/" target="_blank">kynuviet.site</a></td><td></td></tr>
+<tr><td>T</td><td><a href="https://trungtamgai12.net/" target="_blank">trungtamgai12.net</a></td><td></td></tr>
+<tr><td>C</td><td><a href="https://choidangcap13.co/" target="_blank">choidangcap13.co</a></td><td></td></tr>
+<tr><td>x</td><td><a href="https://acheckerviet.cyou/forums/gai-goi-ha-noi.6/page-45" target="_blank">acheckerviet.cyou</a></td><td>河内</td></tr>
+</table>
+<p style="font-size:13px;color:#999;">这些网站经常被封，如果上面的链接失效了，请联系 <a href="https://t.me/I_AM_Nono" target="_blank">@I_AM_Nono</a></p>
+<p style="font-size:13px;color:#999;margin-top:4px;">2026 年 5 月 7 号更新：目前 G1 在越南境外也可以访问。</p>
+
+<h3>流程</h3>
+<ol class="guide-steps">
+<li>打开网站后选择女孩子，然后给姑娘发短信。姑娘会给你发送一个酒店地址。</li>
+<li>先去这个酒店开一个钟点房，把房间号码发给姑娘。</li>
+<li>进入房间冲洗一下，姑娘大约 10 分钟后到你的房间。</li>
+<li>进门后简单的口一下做爱，结束后冲洗付钱。</li>
+</ol>
+
+<h3>前期短信沟通</h3>
+<ol class="guide-steps">
+<li>先发送网页里的接头语（暗号），姑娘上面写的 pass 栏是什么就直接复制粘贴发送。</li>
+<li>姑娘如果长时间不回复就换下一个。姑娘回复后，问她接不接待中国人（用翻译软件翻译成越南语发过去）。有的姑娘不接待，有的对外国人加钱，有的不加钱也接待。</li>
+<li>沟通服务项目——姑娘写的价格都是快餐（30-40 分钟），如果要加钟或过夜通过短信沟通。也可以提其他要求（丝袜、服装等）。</li>
+<li>姑娘一般会在第二步就给你发酒店地址了。到酒店后开钟点房，把房间号发给姑娘。</li>
+</ol>
+
+<h3>各网站特点对比</h3>
+<table class="price-table">
+<tr><th>网站</th><th>定位推荐</th><th>无美颜图</th><th>验证视频</th><th>筛选功能</th></tr>
+<tr><td>G1</td><td>✅ 按距离</td><td>✅ 报告区</td><td>—</td><td>—</td></tr>
+<tr><td>G2</td><td>✅ 按距离</td><td>—</td><td>✅</td><td>✅ 年龄/身高/价格/体重</td></tr>
+<tr><td>G3</td><td>❌</td><td>✅ 评论区</td><td>—</td><td>✅ 按评价排序</td></tr>
+<tr><td>K</td><td>❌</td><td>❌</td><td>—</td><td>❌ 仅按地区</td></tr>
+<tr><td>T</td><td>❌</td><td>✅</td><td>—</td><td>—</td></tr>
+<tr><td>C</td><td>❌</td><td>❌</td><td>❌</td><td>— 直接发短信</td></tr>
+</table>
+<div class="note-box success">
+<strong>总结：</strong>价格很便宜，<strong>50 万越南盾</strong>就可以吃到不错的女孩子了，<strong>100 万越南盾</strong>以上就是越南的顶级女孩子了，价格不含钟点房的房费。结合 G1 和 G2 进行使用可以极大避免踩坑。
+</div>
+</div>
+
+<!-- Section 7: 聚集区 -->
+<div class="section" id="s7">
+<h2>七、胡志明酒店女孩聚集区</h2>
+<div class="img-block">
+<img src="photos/photo_63@08-06-2026_18-24-47.jpg" alt="胡志明聚集区地图"/>
+</div>
+<p>任何事物都有聚集性，酒店女孩也不例外。到了聚集区再打开 G 网挑选女孩，就可以步行前往女孩的酒店，时间上非常好把握。如果一个女孩没有回复短信，完全可以轻松找到下一个女孩。</p>
+<p><strong>小技巧：</strong>到了越南后可以直接前往酒店女孩聚集区，挑选女孩后拿到酒店地址，不开钟点房，直接住进鸡窝酒店，节省钟点房开支。</p>
+<p>如果飞越南之前需要提前订酒店，也可以直接预定酒店女孩集中区域的酒店。或者到这片区域的便利店买瓶饮料吹着空调挑选你满意的女孩。</p>
+
+<div class="cluster-list">
+<div class="cluster-card">
+<h4>1 郡聚集区</h4>
+<p>中心坐标：<span class="coord">10.7700, 106.6886</span></p>
+<p>711 便利店：<span class="coord">10.7686, 106.6871</span></p>
+<p>📝 高端女孩比其他区域多，靠近范五老街，日常消费偏高</p>
+</div>
+<div class="cluster-card">
+<h4>8 郡聚集区</h4>
+<p>中心坐标：<span class="coord">10.7359, 106.6914</span></p>
+<p>GS25 便利店 1：<span class="coord">10.7379, 106.6898</span></p>
+<p>GS25 便利店 2：<span class="coord">10.7322, 106.6892</span></p>
+<p>📝 中心位置还有 711（无空调），两个 GS25 足够了</p>
+</div>
+<div class="cluster-card">
+<h4>10 郡聚集区</h4>
+<p>中心坐标：<span class="coord">10.7725, 106.6692</span></p>
+<p>便利店 1：<span class="coord">10.7714, 106.6698</span></p>
+<p>便利店 2：<span class="coord">10.7759, 106.6670</span></p>
+<p>📝 区域非常热闹，也有大商场，日常消费低，非常适合长住</p>
+</div>
+<div class="cluster-card">
+<h4>富润郡聚集区</h4>
+<p>中心坐标：<span class="coord">10.7974, 106.6882</span></p>
+<p>便利店：<span class="coord">10.7990, 106.6863</span></p>
+<p>📝 靠近机场。只有最西边便利店二楼有空调。中间十字路口有星巴克可做备胎。南边过了河走几分钟还是胡志明的口爆街。</p>
+</div>
+</div>
+<div class="note-box">
+<strong>说明：</strong>这四片聚集区每个地方都有上百个女孩子，胡志明其他地方也有但都比较分散。这四个区域每个都值得关注。
+</div>
+</div>
+
+<!-- Section 8: 头顿 -->
+<div class="section" id="s8">
+<h2>八、头顿市酒店女孩聚集区</h2>
+<div class="img-block">
+<img src="photos/photo_67@08-06-2026_18-24-53.jpg" alt="头顿市"/>
+</div>
+<p>在胡志明的南边有一个海滨小城，有海滩，风景不错，物价不高，非常适合旅居。</p>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">图一女孩聚集区</div>
+<div class="value">10.3370, 107.0828</div>
+</div>
+<div class="info-item">
+<div class="label">图二女孩聚集区</div>
+<div class="value">10.3478, 107.0747</div>
+</div>
+<div class="info-item">
+<div class="label">胡志明→头顿 VIP 面包车</div>
+<div class="value">10.7698, 106.7002</div>
+</div>
+<div class="info-item">
+<div class="label">头顿→胡志明 VIP 面包车</div>
+<div class="value">10.3542, 107.0869</div>
+</div>
+</div>
+<p>图一这片区域有非常多的酒店，住在这片区域里面可以直接使用 G 网挑选女孩。</p>
+</div>
+
+<!-- Section 9: 河内农业大学 -->
+<div class="section" id="s9">
+<h2>九、河内农业大学口爆街</h2>
+<div class="img-block">
+<img src="photos/photo_71@08-06-2026_18-24-54.jpg" alt="河内农业大学口爆街"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">21.0259, 105.9270</div>
+</div>
+<div class="info-item">
+<div class="label">价格</div>
+<div class="value">25 万越南盾/次（2025 年 1 月）</div>
+</div>
+</div>
+<p>河内的农业大学口爆街在河内的北部。注意要点是<strong>农业大学</strong>，不要跟其他大学搞混了，虽然叫农业大学口爆街，但距离农业大学还是有点远的。</p>
+<p>这一条街有<strong>十来家口爆店</strong>，价格都一样。注意看那三段线：一段黑色的，两段红色的。黑色那一段路女孩子年龄都比较大，红线部分有年轻的女孩子。</p>
+<p>到了地方后口爆店很好辨认，粉色的彩灯一眼就能认出来。这条路东西长约<strong>2.5 公里</strong>。</p>
+<div class="note-box danger">
+<strong>注意要点：</strong><br/>
+1️⃣ 天黑了才开门，不要去太早（起码下午 5 点以后再去）。去太早不开门，或者女孩子正在化妆。<br/>
+2️⃣ 周末去的话年轻女孩子更多一点。
+</div>
+</div>
+
+<!-- Section 10: 河内林业大学 -->
+<div class="section" id="s10">
+<h2>十、河内林业大学花街</h2>
+<div class="img-block">
+<img src="photos/photo_73@08-06-2026_18-25-06.jpg" alt="河内林业大学花街"/>
+</div>
+<div class="info-grid">
+<div class="info-item">
+<div class="label">谷歌坐标</div>
+<div class="value">20.91585, 105.57554</div>
+</div>
+<div class="info-item">
+<div class="label">费用</div>
+<div class="value">50 万越南盾/次</div>
+</div>
+</div>
+<p>河内的林业大学花街也是一个热度很高的地方，因为<strong>周末有学生妹兼职</strong>。但这个地方非常偏僻，距离河内市区的直线距离都有 20 公里了，所以肯定是要住在这里的。</p>
+<p>从河内到这里，直接用谷歌地图导航坐公交过来就好。</p>
+<p>花店是晚上天黑了才热闹，有<strong>十多家</strong>，分布在一公里长的马路两边。</p>
+<p><strong>包夜：</strong>晚上 12 点到早上 8 点，可以提前跟花店门口的小哥讲你住在哪个旅馆，到时间他会骑摩托车把小妹送过去。</p>
+<div class="note-box">
+<strong>Telgram 群推荐：</strong><br/>
+🇻🇳 河内资讯公益群：<a href="https://t.me/YNTC888" target="_blank">t.me/YNTC888</a><br/>
+【PlayMap】：<a href="https://t.me/playmap_group" target="_blank">t.me/playmap_group</a><br/>
+🇻🇳 越南河内暗黑资讯群：<a href="https://t.me/hanoixxxinfo" target="_blank">t.me/hanoixxxinfo</a><br/>
+越南吃喝玩乐：<a href="https://t.me/+vaJukOYICXQwNWI1" target="_blank">t.me/+vaJukOYICXQwNWI1</a><br/>
+越夜胡志明：<a href="https://t.me/c/2041918029/12506" target="_blank">t.me/c/2041918029/12506</a>
+</div>
+</div>
+
+<footer>
+<p>本页面由 Telegram 频道内容整理而成 | 信息来自网络，请注意时效</p>
+<p>整理日期：2026 年 6 月</p>
+</footer>
+
+</div>
+</body>
+</html>

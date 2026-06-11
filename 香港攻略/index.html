@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>香港完整攻略 - 资料整理</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.7;scroll-behavior:smooth}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#111}
+::-webkit-scrollbar-thumb{background:#333;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#555}
+a{color:#64b5f6;text-decoration:none}
+a:hover{color:#ff5252;text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.topbar{background:linear-gradient(135deg,#b71c1c,#c62828,#d32f2f);color:#fff;text-align:center;padding:48px 20px 36px;position:sticky;top:0;z-index:100;box-shadow:0 4px 24px rgba(0,0,0,.6)}
+.topbar h1{font-size:2.2em;margin-bottom:6px;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.topbar p{font-size:.92em;opacity:.85}
+.toc-nav{background:#141414;padding:24px 20px;max-width:960px;margin:0 auto;border-bottom:1px solid #2a2a2a}
+.toc-nav h2{color:#ff5252;font-size:1.2em;margin-bottom:14px}
+.toc-nav ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.toc-nav a{color:#90caf9;padding:4px 0;display:block;font-size:.9em}
+.toc-nav a:hover{color:#ff5252}
+.container{max-width:960px;margin:0 auto;padding:0 20px}
+.chapter{background:#161616;border-radius:14px;margin:28px auto;padding:32px;max-width:960px;border:1px solid #252525;box-shadow:0 2px 16px rgba(0,0,0,.3)}
+.chapter+h2{margin-top:36px}
+.chapter-title{font-size:1.6em;color:#ff5252;border-bottom:2px solid #c62828;padding-bottom:12px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.chapter-title .icon{font-size:1.1em}
+.sub-title{font-size:1.25em;color:#ef9a9a;margin:24px 0 14px;padding-left:12px;border-left:3px solid #c62828}
+.sub-sub-title{font-size:1.1em;color:#ce93d8;margin:18px 0 10px;padding-left:12px;border-left:2px solid #7b1fa2}
+.chapter p,.chapter div{margin:10px 0}
+.chapter a{color:#64b5f6}
+.img-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:16px 0}
+.img-row img{border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.4);transition:transform .2s;cursor:pointer}
+.img-row img:hover{transform:scale(1.02)}
+.img-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.img-grid-3 img{border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.img-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.img-grid-4 img{border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.price-box{background:#1b2631;padding:16px 20px;border-radius:10px;margin:14px 0;border-left:4px solid #a5d6a7}
+.price-box strong{color:#a5d6a7}
+.info-box{background:#263238;padding:16px 20px;border-radius:10px;margin:14px 0;border-left:4px solid #64b5f6}
+.info-box strong{color:#64b5f6}
+.warn-box{background:#3e2723;padding:16px 20px;border-radius:10px;margin:14px 0;border-left:4px solid #ff7043}
+.warn-box strong{color:#ff7043}
+.term-item{background:#1e1e1e;padding:10px 16px;border-radius:8px;margin:6px 0;border-left:3px solid #455a64}
+.term-item strong{color:#ef9a9a}
+.terms-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:14px 0}
+.step-list{padding-left:20px;margin:12px 0}
+.step-list li{margin:6px 0;padding-left:4px}
+.footer{text-align:center;padding:36px;color:#555;font-size:.82em;border-top:1px solid #252525;margin-top:48px}
+.back-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:#c62828;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4em;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.5);text-decoration:none;z-index:99}
+.back-top:hover{background:#d32f2f;color:#fff;text-decoration:none}
+@media(max-width:768px){.img-grid-3,.img-grid-4{grid-template-columns:repeat(2,1fr)}.topbar h1{font-size:1.5em}.chapter{margin:12px;padding:18px}.toc-nav ul{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <h1>🇭🇰 香港完整攻略</h1>
+  <p>资料整合 | 攻略 + 实用信息 | 2026年6月整理</p>
+</div>
+<div class="toc-nav">
+  <h2>📑 目录</h2>
+  <ul>
+    <li><a href="#overview">🏙️ 三栋炮楼总览</a></li>
+    <li><a href="#fengming">🏢 凤鸣大厦</a></li>
+    <li><a href="#fulu">💆 福乐大厦（按摩大楼）</a></li>
+    <li><a href="#shuinan">📍 上水 - 深圳隔壁</a></li>
+    <li><a href="#distribution">🗺️ 三栋大楼异国姑娘分布</a></li>
+    <li><a href="#achievement">🎖️ 八国联军成就</a></li>
+    <li><a href="#website">🌐 141网站</a></li>
+    <li><a href="#telegram">📱 Telegram 频道推荐</a></li>
+    <li><a href="#terms">📖 香港术语指南</a></li>
+    <li><a href="#basics">📋 新手扫楼12条</a></li>
+    <li><a href="#fali">🏢 发利大厦实战</a></li>
+    <li><a href="#jianxing">🏢 建兴大厦实战</a></li>
+    <li><a href="#miaojie">🚶 庙街企街攻略</a></li>
+    <li><a href="#tips">💡 香港游玩贴士</a></li>
+    <li><a href="#ts">🌈 TS / 人妖专区</a></li>
+    <li><a href="#street">🚶 站街新手攻略</a></li>
+    <li><a href="#diary">📓 扫街日记</a></li>
+  </ul>
+</div>
+<div class="chapter" id="overview">
+  <div class="chapter-title"><span class="icon">🏙️</span> 三栋炮楼总览</div>
+  <p>
+香港有非常出名的三栋炮楼，整栋楼都是楼凤，坐电梯上顶楼然后走下去，总能找到你满意的楼凤，门上有写特点和价格的小纸片<br>注意事项：禁止拍照/进门不做也会收费/基本上都是快餐三十分钟/遇到警察不要怕，不抓嫖客<br><br>价格：<br>中国：400-600 港币  <br>日韩：600-1000 港币<br>白女：800-1300 港币<br>av女优：1300 港币<br><br>谷歌坐标，【直接在谷歌地图上输入这个坐标即可，中间的逗号是英文的逗号】<br>富士大厦:22.2795, 114.1797<br>发利大厦：22.2985, 114.1739<br>建兴大厦：22.3194, 114.1709<br><br>每个大厦都有两百多个房间，你会像女人爱逛街一样，爱上逛这三栋大楼，细枝硕果马甲线的车模才600港币<br>白人女孩子会聚集在一个楼层<br><br>上午不要去，一般是下午两点开始营业<br><br><br>更新时间 2025年2月21日  这个信息长期有效<br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a> <a href="" onclick="return ShowHashtag(&quot;发利大厦&quot;)">#发利大厦</a> <a href="" onclick="return ShowHashtag(&quot;富士大厦&quot;)">#富士大厦</a> <a href="" onclick="return ShowHashtag(&quot;建兴大厦&quot;)">#建兴大厦</a> <a href="" onclick="return ShowHashtag(&quot;俄罗斯&quot;)">#俄罗斯</a> <a href="" onclick="return ShowHashtag(&quot;乌克兰&quot;)">#乌克兰</a> <a href="" onclick="return ShowHashtag(&quot;韩国&quot;)">#韩国</a> <a href="" onclick="return ShowHashtag(&quot;日本&quot;)">#日本</a> <a href="" onclick="return ShowHashtag(&quot;越南&quot;)">#越南</a> <a href="" onclick="return ShowHashtag(&quot;av女星&quot;)">#av女星</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_1@08-06-2026_18-23-16_thumb.jpg' alt='三栋炮楼' loading='lazy'/></div><div class='img-row'><img src='photos/photo_2@08-06-2026_18-23-16_thumb.jpg' alt='资料图片' loading='lazy'/></div><div class='img-row'><img src='photos/photo_3@08-06-2026_18-23-16_thumb.jpg' alt='资料图片' loading='lazy'/></div>
+</div>
+<div class="chapter" id="fengming">
+  <div class="chapter-title"><span class="icon">🏢</span> 凤鸣大厦</div>
+  <p>
+凤鸣大厦<br>谷歌坐标：22.2782, 114.1840  【直接在谷歌地图上输入这个坐标即可，中间的逗号是英文的逗号】<br><br>今天介绍一下香港铜锣湾附近的凤鸣大厦 地址：香港銅鑼灣利園山道54-70號, Phoenix Apartments<br>这个大厦只有三楼和五楼有一些楼凤，门口挂着彩灯，大概有三四十个楼凤的样子，规模完全没法跟富士大厦/发利大厦/建兴大厦比，质量也没有另外三栋大厦好。<br><br>优点<br>1交通便利，楼下附近的商场有跨境大巴，可以直达深圳国际机场<br>2楼下附近有自主洗衣机<br>3二楼的青年旅店，坏境很好，两百港币左右一晚上<br>4可以步行前往三大楼之一的富士大厦<br>5上楼就有楼凤<br>6 附近有麦当劳<br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;富士大厦&quot;)">#富士大厦</a> <a href="" onclick="return ShowHashtag(&quot;凤鸣大厦&quot;)">#凤鸣大厦</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_4@08-06-2026_18-23-21_thumb.jpg' alt='凤鸣大厦' loading='lazy'/></div><div class='img-row'><img src='photos/photo_5@08-06-2026_18-23-21_thumb.jpg' alt='资料图片' loading='lazy'/></div><div class='img-row'><img src='photos/photo_6@08-06-2026_18-23-21_thumb.jpg' alt='资料图片' loading='lazy'/></div>
+</div>
+<div class="chapter" id="fulu">
+  <div class="chapter-title"><span class="icon">💆</span> 福乐大厦 - 按摩大楼</div>
+  <p>
+今天给大家介绍一下香港的按摩大楼，福乐大厦。<br><br>谷歌坐标：22.3054, 114.1711<br><br>发利、建兴和富士主打的都是快餐，这栋大楼不一样，主打的是按摩，92/95/98都有，如果是92和95的房间，那么姑娘会在门上贴‘全套免问’，表明她们只做按摩，不能开大做全套。姑娘分布在3楼到15楼，整栋大楼有一百多个房间，日式nuru啊，泰式按摩啊，抓龙筋啊，寸止啊这些，你能想到的按摩在这里都能找到。价格的话，因为按摩项目的不同和时间长短的不同，差别很大，所以姑娘们都没在门上标价格，遇到想做的项目可以按门铃咨询一下，记下价格，然后继续扫楼，扫完整栋楼再根据自己写的备忘录做电梯回去找姑娘就好了<br><br>交通：坐地铁到佐敦站，从A口出来，右拐就是，从入口进来有一小段台阶，然后左转，再右转就能看到电梯了，电梯上顶楼，然后一层一层的扫下去。这个大楼的人不多，所以告诉你们怎么走，另外三栋大楼人山人海的，跟着人流走就是了<br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;按摩&quot;)">#按摩</a> <a href="" onclick="return ShowHashtag(&quot;nuru&quot;)">#nuru</a> #92 #95 #98 <a href="" onclick="return ShowHashtag(&quot;佐敦&quot;)">#佐敦</a> <a href="" onclick="return ShowHashtag(&quot;福乐大厦&quot;)">#福乐大厦</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_74@08-06-2026_18-26-42_thumb.jpg' alt='福乐大厦' loading='lazy'/></div>
+</div><div class="chapter" id="shuinan">
+  <div class="chapter-title"><span class="icon">📍</span> 上水 - 深圳隔壁</div>
+  <p>
+上水<br>谷歌坐标：22.5037, 114.1280  【直接在谷歌地图上输入这个坐标即可，中间的逗号是英文的逗号】<br>今天给大家介绍一下香港的上水<br>这个地方距离深圳非常的近，从罗湖口岸或者福田口岸过海关后，坐地铁，下一站就是上水。<br>在这里找楼凤需要借助141网站，根据141网站上面的姑娘信息，她们都集中在这片500米乘300米的区域。快餐价格在300到500之间，如果要加服务的话，请参照141网站上面女孩子的介绍界面。<br><br>总结<br>便宜<br>这里适合深圳的人来合法泄火。<br>不适合第一次来香港嫖娼的人，姑娘太少<br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;上水&quot;)">#上水</a> <a href="" onclick="return ShowHashtag(&quot;141网站&quot;)">#141网站</a> <a href="" onclick="return ShowHashtag(&quot;深圳&quot;)">#深圳</a> <a href="" onclick="return ShowHashtag(&quot;嫖娼&quot;)">#嫖娼</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_8@08-06-2026_18-23-26_thumb.jpg' alt='上水' loading='lazy'/></div><div class='img-row'><img src='photos/photo_9@08-06-2026_18-23-26_thumb.jpg' alt='资料图片' loading='lazy'/></div><div class='img-row'><img src='photos/photo_10@08-06-2026_18-23-26_thumb.jpg' alt='资料图片' loading='lazy'/></div>
+</div>
+<div class="chapter" id="distribution">
+  <div class="chapter-title"><span class="icon">🗺️</span> 三栋大楼异国姑娘分布</div>
+  <p>
+香港三栋大楼异国姑娘分布情况<br><br>富士大厦的异国姑娘常驻在低楼层，二楼三楼四楼都有，肯定有俄罗斯的，经常有韩国的，但是分布的楼层不固定<br>偶尔有其他冷门国家的，大部分都在低楼层。韩国，德国，法国，西班牙，澳大利亚，巴西，阿根廷，加拿大，哥伦比亚，这些不常见的国家，如果有一般都是在富士大厦落脚。<br><br>发力大厦：五楼，出了电梯右拐，再右拐，501巷子，常驻俄罗斯，二楼201巷常驻日本av女优，其他楼层零散分布东南亚姑娘。<br><br>建兴大厦：11楼，出了电梯左拐，11B巷，常驻俄罗斯，其他楼层零散分布有东南亚的姑娘<br><br>刷八国联军成就还是推荐大家住在凤鸣大楼二楼的青年旅馆，按照我图片上标记的路线走，绿色的线是过街天桥，沿途有中国银行，中国建设银行，汇丰银行，如果在大陆的银行账户开通了境外取款功能，方便取现金，下了过街天桥还有蜜雪冰城【如果买了两杯饮料，要塑料袋，收费1港币】，蜜雪冰城马路对面是麦当劳。可以全程步行，五六百米的距离。如果是住在其他地方坐地铁到铜锣湾，记得从C口出，C口挨着蜜雪冰城，不要按照谷歌导航的推荐口出，那个比较远。<br><br>发力大厦：这个大厦是人最多的大厦，如果是坐地铁到尖沙咀地铁站的话，从B2、A2、N2出来，出了地铁口一百五十米左右，日本姑娘我只在这个大楼看到过，201这段时间常驻有av女优，要一千三百港币，其他楼层也有零星分布着非av女优的日本姑娘，八百港币，但是不固定。<br><br>建兴大厦：这个大楼可以从深圳的罗湖口岸和皇岗口岸直接坐地铁过来，中间不用倒地铁，一路直达，坐到旺角东，步行五百米就到建兴大厦了【旺角东站我只走过一次，有点迷糊，具体怎么走欢迎师兄师弟们分享攻略】。如果是从凤鸣大厦过来的，就从D3口出。<br><br>福乐大楼：按摩大楼，累了可以来这里坐按摩，抓龙筋，寸止，nuru都有，坐地铁到佐敦，从A口出，右拐五米就是<br><br>香港坐地铁，认准地铁的颜色和方向，基本上就没问题了，上上下下坐自动扶梯的时候，注意站在右边，因为经常有人赶路，他们在自动扶梯上走都是走左边。<br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;八国联军&quot;)">#八国联军</a> <a href="" onclick="return ShowHashtag(&quot;洋妞&quot;)">#洋妞</a> <a href="" onclick="return ShowHashtag(&quot;毛妹&quot;)">#毛妹</a> <a href="" onclick="return ShowHashtag(&quot;Av女优&quot;)">#Av女优</a> <a href="" onclick="return ShowHashtag(&quot;俄罗斯&quot;)">#俄罗斯</a> <a href="" onclick="return ShowHashtag(&quot;发利大厦&quot;)">#发利大厦</a> <a href="" onclick="return ShowHashtag(&quot;建兴大厦&quot;)">#建兴大厦</a> <a href="" onclick="return ShowHashtag(&quot;富士大厦&quot;)">#富士大厦</a> <a href="" onclick="return ShowHashtag(&quot;凤鸣大厦&quot;)">#凤鸣大厦</a> <a href="" onclick="return ShowHashtag(&quot;福乐大厦&quot;)">#福乐大厦</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a> <a href="" onclick="return ShowHashtag(&quot;按摩&quot;)">#按摩</a> <a href="" onclick="return ShowHashtag(&quot;半套&quot;)">#半套</a> <a href="" onclick="return ShowHashtag(&quot;nuru&quot;)">#nuru</a> <a href="" onclick="return ShowHashtag(&quot;抓龙筋&quot;)">#抓龙筋</a> <a href="" onclick="return ShowHashtag(&quot;nuru&quot;)">#nuru</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_76@08-06-2026_18-26-49_thumb.jpg' alt='分布图' loading='lazy'/></div>
+</div><div class="chapter" id="achievement">
+  <div class="chapter-title"><span class="icon">🎖️</span> 八国联军成就</div>
+  <p>
+这个频道为什么第一个地点选择介绍香港呢？<br>因为《八国联军》成就，对一个男人，太有诱惑力了。一万港币都用不完，就能达成这个成就。<br><br>香港的发利大厦，建兴大厦和富士大厦，常年有外国性工作者营业，你可以轻松的集齐日本/俄罗斯/乌克兰/韩国，四个国家的女孩子，一次一千港币。<br><br>剩下的四个国家，可以选择低配版本的东南亚，越南/泰国/马来西亚/菲律宾，这样你的达成《八国联军》成就了。<br><br>如果你想要高配版本的《八国联军》成就，你可以借助141网站，查询其他欧美国家的女孩子，141网站是支持根据国家进行搜索的。或者你多去几次香港，可以在三栋大楼碰到其他国家的女孩子，我在三栋大楼，遇到过法国/德国/西班牙/澳大利亚/巴西/阿根廷/加拿大/美国/哈萨克斯坦的性工作者，但是她们人数不多，不像俄罗斯/乌克兰/日本/韩国这四个国家，经常能遇到。<br><br>你可以想象一下，在一个晚上，你跟一群好友，吃着烧烤，喝着啤酒，吹着牛逼，这个时候你跟他们说你达成了《八国联军》成就，他们会问你什么八国联军，你跟他们说你操过八个国家的女孩子，是不是很爽？<br><br>&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;<br>极限《八国联军》通关：如果你只是为了达成《八国联军》成就，不在乎体验性爱，体验女孩子肉体，那一天时间就够了，你需要控制射精，在你感觉快要射的时候，拔出来，穿衣服，付钱，走人，去下一个目标，从下午两点到晚上十一点，九个小时的时间，你控制好节奏的话，一天时间就可以达成《八国联军》成就了。<br><br>&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;<br>怎么进入香港？<br>第一种方法是你有港澳通行证，办理了签注，你可以进入香港，如果你的签注已经过期了，可以选择在深圳续签，深圳的出入境管理局有自助续签的机器，不排队的话，几分钟就办理好了。<br><br>另外一种方法就是，你有护照，在一两天内要从香港飞往其他国家，你已经预定了机票，给香港海关工作人员出示你要从香港飞往其他国家的机票，香港海关会允许你停留7天。或者你从国外飞往香港，给香港海关出示你的机票，香港海关也会允许你停留7天。<br><br>香港的地铁和巴士<br>香港的地铁是可以使用支付宝刷码乘坐的，巴士不是统一的，有的可以有的不可以，如果经常去香港的话，建议大家办理一个八达通，首次办理需要付两百港币，办理好以后里面有一百五十港币的余额，有了八达通，坐地铁，坐巴士，去自主洗衣房洗衣服都非常的方便。<br><br>住宿：<br>富士大厦附近，推荐凤鸣大厦二楼的青年旅店，注意他们家的门锁卡和床上充电卡是分开的，充电记得找前台要，他们家入住要收两百港币的押金。<br>发利大厦附近，推荐美丽都大厦的合意宾馆，网上预定后办理入住，不需要押金。<br>建兴大厦附近，马路对面的先施大厦，里面有很多宾馆，注意避开里面的青年旅馆就可以了，我在先施大厦住青年旅馆遇到过精神病人。<br><br>香港其他要注意的地方<br>不要在711或者其他便利店买水，特别的贵。要去那些药店买。<br>一些店铺可以接受支付宝或者微信支付，但是他们给的汇率是一比一，不划算，建议大家应急使用。<br>港币：可以在内地的时候，找银行预约兑换。<br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;洋马&quot;)">#洋马</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a> <a href="" onclick="return ShowHashtag(&quot;八国联军&quot;)">#八国联军</a>
+       </p>
+</div>
+<div class="chapter" id="website">
+  <div class="chapter-title"><span class="icon">🌐</span> 141网站</div>
+  <p>
+141网站：<a href="https://141go161.com/zh/">https://141go161.com/zh/</a><br>今天给大家介绍一下香港的141网站。<br>香港的楼凤是合法的，有的楼凤还会在报纸上打广告，所以自然的也催生出了专门显示楼凤信息的网站，这个网站就是141。如果你直接谷歌141网站会出来很多个搜索结果，我们认准维基百科给出的网址就可以了，如果哪一天我提供的这个网址失效了，大家同样去维基百科查找即可<br><br>特点<br>141网站一般是【不在楼凤聚集区的】性工作者发布信息，她们比较分散，不像三栋大楼那样集中<br>在这个网站上，你可以通过搜索，快速找到满足自己特定需求的性工作者<br>我就是在141网站上找到奶水女孩和肛交女孩<br><br>注意事项<br>一 避开网站上面的广东/内地<br>二 141网站上面的女孩子，一般都比三栋大厦的女孩子价格贵，以俄罗斯女孩为例，建兴大厦的俄罗斯女孩一般在800港币到1200港币之间，但是141网站上面普遍在1300港币以上了<br>三 注意过度美颜图片，可以查看一下网页里面有没有视频，或者是评论区里面其他客户拍摄的图片<br>四 在网站上面找到合适的女孩子后，一般都有联系方式和地址，地址可能是不精准的，比如标错了房间号码，你到楼下后女孩子会给你正确的房间号码<br>五 遇到不满意的，不要进房间，直接走，不要有来都来了的那种思想<br>六  通过141网站上面的电话号码或者WhatsApp联系女孩子，注意问一下是否招待大陆客户<br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;141网站&quot;)">#141网站</a> <a href="" onclick="return ShowHashtag(&quot;161网站&quot;)">#161网站</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_7@08-06-2026_18-23-23_thumb.jpg' alt='141网站' loading='lazy'/></div>
+</div><div class="chapter" id="telegram">
+  <div class="chapter-title"><span class="icon">📱</span> Telegram 频道推荐</div>
+  <p>
+给大家分享三个香港的telegram频道<br>香港hk扫楼洗楼一楼一凤141 161 一樓一鳳 鳳姐掃樓洗樓<br><a href="https://t.me/hk141Gogogo">https://t.me/hk141Gogogo</a><br>这个聊天群主要是聊发利大厦的一些日常<br><br>香港扫楼洗楼一楼一凤141公开榜<br><a href="https://t.me/hk141bbc">https://t.me/hk141bbc</a><br>跟上面的那个聊天群是同一批人在管理，这个频道会写一些师兄们嫖娼结束后的心得体验，也会推荐一些发利大厦的优质女孩<br><br>2025/3/18 更新<br>💃💃🇭🇰香港18區 囡囡 之 百花齊放 💃💃<br><a href="https://t.me/HKFUNFORMAN2">https://t.me/HKFUNFORMAN2</a><br>这是一个频道和聊天群的合集，香港的按摩店和拉皮条的鸡头会在这里发广告，里面有导航分区,有很多术语，遇到不懂的看下面的术语讲解<br><br>群组里面的导航<br><a href="https://t.me/hkfunforman/20595">https://t.me/hkfunforman/20595</a><br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;telegram频道&quot;)">#telegram频道</a> <a href="" onclick="return ShowHashtag(&quot;楼凤&quot;)">#楼凤</a> <a href="" onclick="return ShowHashtag(&quot;按摩&quot;)">#按摩</a> <a href="" onclick="return ShowHashtag(&quot;spa&quot;)">#spa</a>
+       </p>
+  <div class='img-row'><img src='photos/photo_11@08-06-2026_18-23-27_thumb.jpg' alt='Telegram频道' loading='lazy'/></div><div class='img-row'><img src='photos/photo_12@08-06-2026_18-23-27_thumb.jpg' alt='资料图片' loading='lazy'/></div>
+</div>
+<div class="chapter" id="terms">
+  <div class="chapter-title"><span class="icon">📖</span> 香港术语指南</div>
+  <p>
+香港一些术语<br>Part 1 / <a href="" onclick="return ShowHashtag(&quot;P1&quot;)">#P1</a>：一般就是指做&quot;按摩&quot;<br>Part 2 /  <a href="" onclick="return ShowHashtag(&quot;P2&quot;)">#P2</a>：&quot;打飞机&quot; / 用口 / &quot;nuru&quot; 等不同方式的出火，就是不能做爱<br>Part 2.5 / P2.5 ：这个灰色，也就是标明只有P2的场，某些女可能会暗做P3，可能看人，可能看钱，可能看脸，切记不能强求。<br>Part 3 / <a href="" onclick="return ShowHashtag(&quot;P3&quot;)">#P3</a>：做爱<br>半套： P1+P2，也就是按摩+打飞机/不同方式达到出水为目标，总之就是不能做爱<br><a href="" onclick="return ShowHashtag(&quot;全套&quot;)">#全套</a>：P1 + P2 + P3，总之可以做爱（有的店家会跳过按摩）<br><a href="" onclick="return ShowHashtag(&quot;指壓三味&quot;)">#指壓三味</a>：其实即是全套。洗澡，吹箫，做爱（简称洗吹做））<br>指壓四味：洗澡，<a href="" onclick="return ShowHashtag(&quot;吹箫&quot;)">#吹箫</a>，<a href="" onclick="return ShowHashtag(&quot;毒龙钻&quot;)">#毒龙钻</a>（通常都是）+做爱<br><br><br>&quot;企企 / 企街&quot; ：（200-300約）  站街女<br>&quot;1仔&quot; / &quot;141&quot; ：（約400-450）<br>一般都是旧楼、堂楼上有，楼下通常有红光灯，上到约好的房间，按钟开门发觉不是你想见的人就走人（或者礼貌地讲不对），遇到想见的人就入门,,如果多人排队..等一等就好了。<br>指壓 / 指仔：（約430-450）<br>在限定时间里任玩，一般都是中女多。<br><a href="" onclick="return ShowHashtag(&quot;神房&quot;)">#神房</a>  /  <a href="" onclick="return ShowHashtag(&quot;神秘房&quot;)">#神秘房</a> ：（約500 - 800）<br>以前定义的是1楼1，一般以熟人介绍才会做你生意，价钱大约在600左右。<br><a href="" onclick="return ShowHashtag(&quot;樓上骨&quot;)">#樓上骨</a> / <a href="" onclick="return ShowHashtag(&quot;USB&quot;)">#USB</a> ：（約600-900）看介绍<br>通常就是P1 + P2，部份有 P3<br><a href="" onclick="return ShowHashtag(&quot;Spa&quot;)">#Spa</a>：（约500-1500）有部份陀地场标价3000<br>正统的Spa，是指利用水结合沐浴、按摩、涂抹保养品和香熏来促进新陈代谢，满足人体视觉、味觉、触觉、嗅觉和思考达到一种身心畅快嘅享受。<br>后来香引入Spa水疗，将大部份服务减去，以P1、P2为主，手推、Body，再有后来加入 &quot;Nuru&quot; &quot;磨棍&quot;，直到后来加入P3。<br>HG / Hotel Girl / 酒店女：（约800-3000）<br>要预约，一般要上酒店，地方可能会干净，但是会贵，有机会调包女孩子，如果发现真是调包你可以不入门，但需要跟介绍人一下，交代原因，否则你可能被拉入黑名单<br><br><br><a href="" onclick="return ShowHashtag(&quot;快餐&quot;)">#快餐</a>：洗吹做服务 有时间限制<br><a href="" onclick="return ShowHashtag(&quot;車牌&quot;)">#車牌</a>：接吻，所分级别有碰碰車》小車》中車》大車》坦克車 等。<br>車牌自考：代表女孩子不一定会让你亲，一般都是看长相，或者对你有没有感觉。<br>中超：隆胸，不过现在有分：<br>•  “高科技”比真球的观感、手感更加完美。<br>•  “中科技”会有一点瑕疵能看出来而已。<br>格手 / 葉問：如果你有进一步的肢体动作，例如握球、舔球、摸阴等，她会用手挡住或改变姿势，让你无法再进一步。<br>起機 /  <a href="" onclick="return ShowHashtag(&quot;HJ&quot;)">#HJ</a>  / 打丁：打飞机<br>口交 / BJ / 吹簫：口交<br>開大 / P3 ：做爱 <br>環保：不戴套<br>環吹：不戴套吹<br>環屌：不戴套，做爱<br>波推：用胸在你身上游走。<br>夾腸：姑娘用胸夹你的下面。<br>股推 / 素股 / 蘿柚推：姑娘用屁股磨JJ<br>磨棍：姑娘用下体磨蹭JJ<br>腳交：姑娘用双脚让你射<br>口爆/KB：射在姑娘口中<br>毒龍鑽：姑娘用舌头舔你屎眼<br>冰火：姑娘用冰或薄荷、热水交替为你口交<br>漫遊：姑娘用舌头舔你的背部<br>雙飛：兩女共侍一夫<br>RPP/蘭花聖手：也就是挠屁股，意思是用手指让你全身发痒，特别集中在臀部附近<br>69 ：男女前后上下、头尾倒置为对方口交，也就是**“69”体位**<br>Body Massage/BM：姑娘用身体，特别是胸部，替你按摩<br>泡泡洗體：也就是把润滑液换成泡沫水，其他大致相同。<br>Nuru：日式Nuru按摩，就是在身上涂满一种特别的 Nuru 润滑液，磨到你射。也就是在成人电影中，经常被风俗娘用来做 Body Massage (BM) 的那种液体。<br>放飛箏：一种独特的打飞机方式<br>包膠/報告：赛后报告，是大哥们释放后写的心得和感想。<br>潮吹：姑娘高潮喷出的无色无味液体。<br>男潮吹：一般是男人射精过后，对方仍然会用独特的手法不断继续刺激男人的龟头，使其进入第二次兴奋，再喷出/射出无色无味的液体<br>幼幼：一般定义为20岁或以下的姑娘<br>DM ：Drop Money 丢钱了<br>DJ / 捽碟 ： 简单来说，就是用手指不断来回抚弄女性下体，导致对方出水（视乎女性状态）<br><br><a href="" onclick="return ShowHashtag(&quot;香港&quot;)">#香港</a> <a href="" onclick="return ShowHashtag(&quot;术语&quot;)">#术语</a>
+       </p>
+</div>
+<div class="chapter" id="basics">
+  <div class="chapter-title"><span class="icon">📋</span> 新手扫楼12条</div>
+  <div class="price-box">
+    <strong>基础信息</strong><br><br>
+    带够港币现金，前往目的地后上楼观看女孩子，选好以后询问价钱，无问题即可进入房间。<br><br>
+    服务包括：30分钟内，洗、吹、做。超出30分钟仍未完事，可选择加钟（30分钟），否则请穿着好衣服离开。超出30分钟仍未离开，默认加钟。<br><br>
+    价钱：大陆妹  / 洋马  或 <br>
+    建议：选大陆妹带 ，选洋马带 ，有多无少。<br>
+    <strong>只收港币现金。</strong><br><br>
+    <strong>为什么是一楼一？</strong><br><br>
+    一楼一向来以安全、物美价廉著称，只需 400-1000 港币即可品尝世界各地。越南、泰国的亚洲风情，欧美金发碧眼的大洋马，都可以在凤楼里找到。<br><br>
+    香港法例 200 章 117 条明确规定：任何处所由超过二人主要用以卖淫用途即可被视为卖淫场所。一男一女在一个房间里，游客不会有任何法律风险。
+  </div>
+  <div class="sub-title">扫楼12条注意事项</div>
+  <ol class="step-list">
+    <li>请乘坐电梯到顶楼，再一路走下来，这样比较节省体力。</li>
+    <li>门上挂有「欢迎光临」或「请按钟」等字样的，请大胆按下门铃。挂有「请勿打扰」或「请稍后」的不要按。</li>
+    <li>开门之后请先确认价格，如果进了门又后悔了，有的可能会收取 200-300 不等的费用。</li>
+    <li>仔细确认她们的身材，尤其是东南亚国籍的，会存在人妖（放音乐很大声的很有可能是妖）。</li>
+    <li>礼貌有序的排队按铃，不要争抢，不要在楼道中伫立等待造成堵塞。</li>
+    <li>欧洲 800-1000 HKD，内地 500-600 HKD，东南亚 400-500 HKD。</li>
+    <li>最佳入场时间建议在下午 2 点后进楼，大部分姑娘刚开始营业，状态比较好，楼里人也比较少。</li>
+    <li>部分姑娘有增值服务：制服丝袜、无套口、加钟、按摩等，明码标价。</li>
+    <li>洋马普遍在同一层里，态度千差万别，建议选择对你笑的。</li>
+    <li>不要害羞按门铃也不要害羞问价格，不合适说声谢谢转身离开就可以了。</li>
+    <li>不要急着做选择，遇到还不错的先记下门牌号，整栋看完后再回头挑选。</li>
+    <li>按门铃或在楼道里穿行时，尽量不要举着手机，会被误认为是偷拍。</li>
+  </ol>
+</div>
+<div class="chapter" id="fali">
+  <div class="chapter-title"><span class="icon">🏢</span> 发利大厦实战</div>
+  <div class="info-box">
+    <strong>地址：</strong>地铁尖沙咀站 A2 出口，香港油尖旺区加拿芬道 33-35 号。
+  </div>
+  <div class="info-box">
+    <strong>观光楼层：</strong>2-8 楼，整栋楼都是。每层楼大概 20-30 户，工作室超多。二楼有不少东南亚菜馆，可以吃到印尼菜、泰国菜、马来西亚菜，价格实惠。
+  </div>
+  <p>发利大厦有 320 个房间，选择多，性价比高，质量个人认为是目前香港最强。</p>
+  <div class="sub-title">扫楼</div>
+  <p>坐电梯到顶楼 8 楼，然后一层一层爬楼梯往下逛。每层楼大概十多个房间。看到房门牌子写着「请按钟」或「欢迎光临」，就大胆按门铃。优质餐馆通常很受欢迎，一次只接待一个客户，看到想吃的就赶紧出手。扫楼过程中看到不错的一定要记下来。</p>
+  <div class="sub-title">常见问题</div>
+  <ul class="step-list">
+    <li>价格：中餐馆 500-600 HKD，东南亚馆 400-500 HKD，西餐厅 800-1000 HKD</li>
+    <li>不可以讲价</li>
+    <li>先就餐后付费，给港币现金（部分西餐厅要求先付费）</li>
+    <li>营业时间：早上 11 点到晚上 12 点（建议下午 2 点去，大部分凤姐这个时候开工，部分营业至凌晨 2 点）</li>
+    <li>敲门随意，进门要非常慎重。一旦进门无论是否就餐都必须给部分或全部费用（200-700 港币）</li>
+    <li>不可拍照，不可偷拍</li>
+  </ul>
+</div><div class="chapter" id="jianxing">
+  <div class="chapter-title"><span class="icon">🏢</span> 建兴大厦实战</div>
+  <div class="info-box">
+    <strong>地址：</strong>地铁旺角站 E2 出口，香港油尖旺区亚皆老街 52-54 号。
+  </div>
+  <div class="info-box">
+    <strong>观光楼层：</strong>5-9，11-14 楼。每层楼大概 10-20 个工作室。建兴大厦有不少俄罗斯、乌克兰西餐厅。喜欢吃西餐的单身狗一定不要错过。
+  </div>
+  <p>洋马在 11 楼、10 楼、5 楼。</p>
+  <p>发利和建兴这两栋楼可以说是世界各地嫖客的朝圣地。质量排名：发利 ＞ 富士 ＞ 建兴。建兴环境较烂，质量一般，适合淘宝，价格便宜（很多 400 的）。</p>
+  <div class="sub-title">常见问题</div>
+  <ul class="step-list">
+    <li>价格：中餐馆 500-600 HKD，东南亚馆 400-500 HKD，西餐厅 800-1000 HKD</li>
+    <li>不可以讲价</li>
+    <li>先就餐后付费，给港币现金</li>
+    <li>营业时间：早上 11 点到晚上 12 点</li>
+    <li>不可拍照，不可偷拍</li>
+    <li>建兴从旺角站出来走 500 米就到</li>
+    <li>富士大厦从铜锣湾出来，过街天桥沿著走，旁边有蜜雪冰城</li>
+    <li>凤鸣大厦在铜锣湾，可以步行到富士</li>
+  </ul>
+</div>
+<div class="chapter" id="miaojie">
+  <div class="chapter-title"><span class="icon">🚶</span> 庙街企街攻略</div>
+  <p>庙街是香港著名的旅游景点，有很多小姐姐，一般穿着性感站在楼下。大家可以一边逛一边挑选。</p>
+  <div class="warn-box">
+    <strong>注意：</strong>庙街的小姐姐不能主动问价，因为属于公共场所，属于违法行为。为防止女阿 sir 钓鱼，请不要主动开口，让小姐姐开口，或者跟她上楼，进了楼道再问价。
+  </div>
+  <p>庙街项目没有洗澡，上去就是擦一下就开始，价格相对较低。有洁癖的帅哥可以洗洗再去。时间也是 30 分钟左右，可以加钱加项目。</p>
+  <p>庙街攻略完整版：<a href="https://t.me/hk141bbc/891" target="_blank">https://t.me/hk141bbc/891</a></p>
+</div><div class="chapter" id="tips">
+  <div class="chapter-title"><span class="icon">💡</span> 香港游玩贴士</div>
+  <div class="info-box">
+    <strong>港币问题：</strong>香港现金为主，去银行换好也行，口岸换也行。市区小巷子换比较优惠。多带现金，人民币现金也可以。西九龙尖沙咀附近换也可以，不要到港岛换（基本 1:1）。银联卡需开通境外取现功能。
+  </div>
+  <div class="info-box">
+    <strong>流量问题：</strong>可以在口岸买一日卡/七日卡，也可提前在拼多多和淘宝上买。不用实名，插进去激活即可，无限流量。
+  </div>
+  <div class="info-box">
+    <strong>充电器转换头：</strong>可拼多多购买，4 块钱包邮。香港没有充电的地方，带够一个 2-3 万毫安的充电宝很有必要。
+  </div>
+  <div class="info-box">
+    <strong>交通：</strong>可以办理八达通，200 块钱可用余额 150，也可某宝提前购买。还可以支付饭钱。也可使用支付宝乘车。
+  </div>
+  <div class="info-box">
+    <strong>省钱方案：</strong>深圳出发：罗湖过关-地铁到旺角东-步行到建兴；皇岗过关-福田-地铁到旺角东-步行到建兴；深圳湾过关-地铁到佐敦站-步行到福乐大厦。
+  </div>
+</div>
+<div class="chapter" id="ts">
+  <div class="chapter-title"><span class="icon">🌈</span> TS / 人妖专区</div>
+  <p>香港一楼一里有明显的「TS 专楼/专层」（如某些大厦的特定楼层），很多 TS（大多泰国/菲律宾/印尼/马来背景）会用「新加坡模特」「车模」「高挑女神」「混血」等噱头宣传。</p>
+  <ul class="step-list">
+    <li>177cm 正是 TS 常见身高（原生男性骨架 + 荷尔蒙/手术后高挑）。</li>
+    <li> 正是 TS 常见低价位（部分新来或生意差的会压到 400-600），用来吸引贪便宜或想试 TS 但怕贵的客人。</li>
+    <li>放音乐很大声的很有可能是妖。</li>
+    <li>仔细确认身材，尤其是东南亚国籍的。</li>
+  </ul>
+</div><div class="chapter" id="street">
+  <div class="chapter-title"><span class="icon">🚶</span> 站街新手攻略</div>
+  <div class="price-box">
+    <strong>站街定义：</strong>站街女，指的是在街上找客人的，分为「七日鲜」和本地自己做的，通常是四处走动或者站在某处，看中合适的就问价钱然后上楼。<br>
+    <strong>价格：</strong> - （老站街女可能一百多也有交易）<br>
+    <strong>基本服务：</strong>纯 ML（一般不洗澡）<br>
+    <strong>地点：</strong>庙街、观塘、元朗、北角、油麻地、荃湾
+  </div>
+  <div class="sub-title">找站街流程</div>
+  <ol class="step-list">
+    <li>看到合适的女孩，打眼色，对方一般会用手势表示价格，没有的话上到房间再问，或者跟着上楼梯后问。</li>
+    <li>合适就跟上楼。有时女孩子站的位置和工作室可能要走一段路。</li>
+    <li>各自脱衣服。大部分站街没有浴室洗澡，但会用湿纸巾擦。</li>
+    <li>有些女孩会免费套吹几下不加钱，有些会叫加 -，没有就手冲到硬带套，而有些女孩即使不硬也不会帮你手冲，自己看着办。</li>
+    <li>做爱，预期不会很久（5-15分钟），就算是无限时间的女孩也想快点下楼做下一个。叫鸡抓球换姿势是理所当然的，叫你加钱的是骗你，但有时间限制，自己衡量怎么换。</li>
+    <li>摘套擦拭，一般用纸巾，好一点会给湿纸巾，更幸运的话有洗手盘或者可以让你进厕所用水洗，但正常不提供毛巾。</li>
+    <li>穿衣服回家，下楼（女孩可能先走你）。</li>
+  </ol>
+  <div class="sub-title">各地区地点名词</div>
+  <div class="term-item">
+    <strong>老庙（庙街）：</strong>G宝、肉档、凉茶、B位、光头、假人、咖喱、串烧、吉野、邮筒、马会、楼上泰、大ok、生果（小巴站）、细OK、北海、牌头、平安<br>
+    <strong>价格：</strong>-280
+  </div>
+  <div class="term-item">
+    <strong>油麻地：</strong>得如、中港、翠华、美心、登打士宾馆、日本城、三荤饭、咸公、果栏、窝打老道7仔<br>
+    <strong>价格：</strong>通常 
+  </div>
+  <div class="term-item">
+    <strong>观塘：</strong>康宁圈、借钱兄弟、巷仔、乐昌、街市、金桥、仁安、小巴站<br>
+    <strong>价格：</strong>通常 （DLC有时会贵些）
+  </div>
+  <div class="term-item">
+    <strong>元朗：</strong>同学、金华、小巴站、鸿运、邮局、交通银行、东堤、垃圾站、水车馆、宝石、谷亭<br>
+    <strong>价格：</strong>通常 -250
+  </div>
+  <div class="warn-box">
+    <strong>新手温馨提示：</strong><br>
+    <strong>如何分辨站街还是良家妇女：</strong>走到女女附近你看她，她会看回你，有些会打眼色有些会开口问你去不去。如果不开口又看不出是不是站街的，可以等其他师兄上完下来你再去问。不要招惹错良家妇女，不然被女阿sir抓了就活该（在街上问人价钱绝对可能被控游荡或行为不检等）。<br><br>
+    如果女孩不看你，要么她根本不是站街的，要么她怕你是好人不想做你。正常站街附近很多时候都有其他师兄盯女孩。要知道如果是阿sir师姐放蛇的，她不能主动招惹人也不会先开口，想安全就等其他师兄上。<br><br>
+    <strong>小心财物：</strong>有些女孩会假装站街，进了房可能会叫你脱衣冲凉好好服侍又帮你按摩，但记得，就算看着那个女孩，也可能会出现另一个人偷你的钱包。把钱包贵重物品放自己看得见的位置。去叫鸡就把金链子摘了，别傻了，万一自己掉了又怪鸡。
+  </div>
+</div>
+<div class='chapter' id='diary'><div class='chapter-title'><span class='icon'>📓</span> 扫街日记 · 香港实战篇</div>
+    <div >
+        <span >📓</span>
+        <h2>扫街日记 · 香港实战篇</h2>
+    </div>
+    <div >
+        <div >
+一楼一凤简称 141（one for one），在香港不违法，各国都有：东南亚、各种斯坦、欧洲，可以体验异国风情。服务就是洗吹做半个小时，偏 KC 性质，多数戴 T 吹。<br><br>
+香港主要的楼就是建兴和发利。10 点开始上人，两点差不多到齐。坐电梯到顶层往下一层层扫，门口有牌子挂着「在上钟」或「请按铃」，没上钟的大胆挨个按。不用担心第二次按被骂，人家一天开无数次门记不住你。<br><br>
+
+<b>发利大厦：</b>尖沙咀，共 8 层，每层房间很多，妹子数量远超富士，质量整体比富士强，各国批汇集最全。价格：内地 600-700，泰国越南 400-500，白人 1000。推荐泰国妹妹，脸微整但精致，胸硬但态度好，500 裸口，在 305E。<br><br>
+
+<b>建兴大厦：</b>尖沙咀地铁到旺角，共 14 层，环境很烂，质量一般，适合淘宝，价格便宜，很多 400 的，质量高的少。洋马也明显比发利的丑一些。<br><br>
+
+<b>质量排名：</b>发利 ＞ 富士 ＞ 建兴<br><br>
+
+<b>一日扫楼路线参考：</b><br>
+福田口岸 → 小巴 B1 到元朗转 968 直达铜锣湾 → 逛富士 → 地铁到尖沙咀逛发利 → 最后旺角建兴 → 旺角东坐东铁线回深圳。三个楼都在地铁附近，一天扫完可行。
+        </div>
+    </div>
+</div>
+<div <div class="chapter" id="diary">
+  <div class="chapter-title"><span class="icon">📓</span> 扫街日记 · 香港实战篇</div>
+  <p>一楼一凤简称 141（one for one），在香港不违法，各国都有：东南亚、各种斯坦、欧洲，可以体验异国风情。服务就是洗吹做半个小时，偏 KC 性质，多数戴 T 吹。<br><br>
+  香港主要的楼就是建兴和发利。10 点开始上人，两点差不多到齐。坐电梯到顶层往下一层层扫，门口有牌子挂着「在上钟」或「请按铃」，没上钟的大胆挨个按。不用担心第二次按被骂，人家一天开无数次门记不住你。</p>
+  <div class="sub-title">发利大厦</div>
+  <p>尖沙咀，共 8 层，每层房间很多，妹子数量远超富士，质量整体比富士强，各国批汇集最全。价格：内地 600-700，泰国越南 400-500，白人 1000。推荐泰国妹妹，脸微整但精致，胸硬但态度好，500 裸口，在 305E。</p>
+  <div class="sub-title">建兴大厦</div>
+  <p>尖沙咀地铁到旺角，共 14 层，环境很烂，质量一般，适合淘宝，价格便宜，很多 400 的，质量高的少。洋马也明显比发利的丑一些。</p>
+  <div class="info-box">
+    <strong>质量排名：</strong>发利 ＞ 富士 ＞ 建兴
+  </div>
+  <div class="sub-title">一日扫楼路线参考</div>
+  <p>福田口岸 → 小巴 B1 到元朗转 968 直达铜锣湾 → 逛富士 → 地铁到尖沙咀逛发利 → 最后旺角建兴 → 旺角东坐东铁线回深圳。三个楼都在地铁附近，一天扫完可行。</p>
+</div>
+<div class="footer">
+  🇭🇰 香港完整攻略 | 资料整合自 Telegram 分享频道 | 信息来自网络，请注意时效型<br>
+  整理日期：2026年6月11日
+</div>
+<a href="#" class="back-top" title="回到顶部">↑</a>
+<script>
+document.querySelector('.back-top').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
+
